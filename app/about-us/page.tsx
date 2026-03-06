@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const AboutUs = () => {
@@ -133,7 +134,7 @@ const AboutUs = () => {
           {/* Heading */}
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-              Why We Started <span className="text-[#FC4248]  bg-clip-text">Ringscale Media</span>
+              Why We Started <span className=" bg-clip-text">Ringscale Media AI</span>
             </h2>
             <p className="mt-4 text-sm md:text-base lg:text-lg max-w-3xl mx-auto text-white/90">
               Every local business deserves to compete and grow — with the right
@@ -168,6 +169,13 @@ const AboutUs = () => {
                 ))}
               </div>
             </div>
+              <Image
+                src="/about-us/founding-story1.webp"
+                alt="Problem Illustration"
+                width={500}
+                height={300}
+                className="mt-8 rounded-lg shadow-lg object-cover"
+              />
           </div>
         </div>
       </section>
