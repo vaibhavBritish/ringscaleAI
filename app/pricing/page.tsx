@@ -7,12 +7,12 @@ import PaymentFaq from "../components/PaymentFaq";
 
 const Pricing = () => {
   const logos = [
-    { src: "/logos/frenz-holidays.png", alt: "Frenz Holidays" },
-    { src: "/logos/desire-salon.png", alt: "Desire Salon" },
-    { src: "/logos/physioedge.png", alt: "Physioedge" },
-    { src: "/logos/ayurveda.png", alt: "Healing Through Ayurveda" },
-    { src: "/logos/peacock-salon.png", alt: "Peacock Salon" },
-    { src: "/logos/tressez.png", alt: "Tressez" },
+    { src: "/pricing/Client-3.webp", alt: "Frenz Holidays" },
+    { src: "/pricing/Client-6.webp", alt: "Desire Salon" },
+    { src: "/pricing/Client-8.webp", alt: "Physioedge" },
+    { src: "/pricing/Client-10.webp", alt: "Healing Through Ayurveda" },
+    { src: "/pricing/Client-13.webp", alt: "Peacock Salon" },
+    { src: "/pricing/Client-17.webp", alt: "Tressez" },
     // add more logos here
   ];
 
@@ -215,7 +215,7 @@ const Pricing = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-blue-600">
           Trusted by Business Owners
           <br className="hidden md:block text-[#F13836]" />
-           <span className="text-[#F13836]">from Various Industry</span>
+          <span className="text-[#F13836]">from Various Industry</span>
         </h2>
 
         <div className="mt-12 relative overflow-hidden">
