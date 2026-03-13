@@ -12,8 +12,8 @@ const companyLinks = [
 ];
 
 const legalLinks = [
-  { name: "Terms & Conditions", href: "#" },
-  { name: "Privacy Policy", href: "#" },
+  { name: "Terms & Conditions", href: "/terms-of-services" },
+  { name: "Privacy Policy", href: "/privacy-policy" },
 ];
 
 const Footer = () => {
@@ -186,18 +186,17 @@ const Footer = () => {
 
             <div className="space-y-3 leading-relaxed text-black/75">
               <p>
-                C-9, First Floor Near Janakpuri West Metro Station New Krishna
-                Park, Janakpuri, Vikaspuri, New Delhi, Delhi 110018
+                C-9,Janakpuri West Metro Station Janakpuri New Delhi, Delhi 110018
               </p>
 
               <p>
                 <span className="font-semibold text-black">Contact Number:</span>{" "}
-                011 4350 6868
+                +91 9650708468
               </p>
 
               <p>
                 <span className="font-semibold text-black">Email:</span>{" "}
-                support@RingscaleAi.com
+                support@ringscaleai.com
               </p>
             </div>
           </motion.div>

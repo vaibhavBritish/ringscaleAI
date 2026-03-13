@@ -98,118 +98,118 @@ const AboutUs = () => {
   };
   return (
  <div className="max-w-6xl mx-auto px-4">
-      <motion.section
-        className="text-center mt-20"
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={fadeUp}
-        custom={0}
-      >
-        <motion.h1
-          className="text-4xl md:text-6xl font-bold leading-tight tracking-tight"
+<motion.section
+  className="text-center mt-20"
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.3 }}
+  variants={fadeUp}
+  custom={0}
+>
+  <motion.h1
+    className="text-4xl md:text-6xl font-bold leading-tight tracking-tight"
+    variants={fadeUp}
+    custom={0.1}
+  >
+    Empowering Local Business&apos;
+    <br />
+    To{" "}
+    <motion.span
+      className="bg-linear-to-r from-[#5F40EB] to-[#FC4248] text-transparent bg-clip-text bg-[length:200%_200%]"
+      animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
+      transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+    >
+      Scale Seamlessly
+    </motion.span>
+  </motion.h1>
+
+  <motion.p
+    className="mt-8 md:mt-10 text-lg md:text-xl text-gray-600 max-w-4xl mx-auto"
+    variants={fadeUp}
+    custom={0.2}
+  >
+    An integrated AI-powered marketing platform built to help small businesses
+    generate consistent revenue growth automatically.
+  </motion.p>
+</motion.section>
+
+<motion.section
+  className="text-center mt-20"
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.25 }}
+>
+  <motion.p
+    className="text-sm md:text-base font-medium text-indigo-500 tracking-[0.18em] uppercase"
+    variants={fadeUp}
+    custom={0}
+  >
+    About Ringscale AI
+  </motion.p>
+
+  <motion.h1
+    className="mt-6 font-bold text-3xl md:text-4xl text-gray-900"
+    variants={fadeUp}
+    custom={0.1}
+  >
+    Built to support small business owners
+  </motion.h1>
+
+  <div className="max-w-6xl mx-auto mt-12 md:mt-16">
+    <motion.p
+      className="text-2xl md:text-3xl font-medium text-gray-700 leading-relaxed max-w-5xl mx-auto"
+      variants={fadeUp}
+      custom={0.2}
+    >
+      Most small business owners find it difficult to manage effective
+      marketing. As a result, many lose customers to large brands and
+      established chains. Ringscale Media gives them access to powerful
+      technology so they can grow faster and compete with confidence.
+    </motion.p>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 mt-16">
+      {[
+        {
+          value: "2.3+ Crore",
+          text: "Small Businesses across India",
+        },
+        {
+          value: "32%+",
+          text: "Share in India&apos;s GDP",
+        },
+        {
+          value: "90%+",
+          text: "Haven&apos;t adopted Digital Marketing yet",
+        },
+      ].map((item, index) => (
+        <motion.div
+          key={item.value}
+          className="rounded-3xl border border-black/5 bg-white shadow-sm p-6 group"
           variants={fadeUp}
-          custom={0.1}
+          custom={0.15 * index}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.25 }}
+          whileHover={{ y: -10, scale: 1.02 }}
+          transition={{ duration: 0.35 }}
         >
-          Helping Local Business&apos;
-          <br />
-          Grow{" "}
-          <motion.span
-            className="bg-linear-to-r from-[#5F40EB] to-[#FC4248] text-transparent bg-clip-text bg-[length:200%_200%]"
-            animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
-            transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-          >
-            Effortlessly
-          </motion.span>
-        </motion.h1>
-
-        <motion.p
-          className="mt-8 md:mt-10 text-lg md:text-xl text-gray-600 max-w-4xl mx-auto"
-          variants={fadeUp}
-          custom={0.2}
-        >
-          We are an all-in-one Marketing AI platform that delivers actual
-          revenue growth for small business owners, all on auto-pilot.
-        </motion.p>
-      </motion.section>
-
-      <motion.section
-        className="text-center mt-20"
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.25 }}
-      >
-        <motion.p
-          className="text-sm md:text-base font-medium text-indigo-500 tracking-[0.18em] uppercase"
-          variants={fadeUp}
-          custom={0}
-        >
-          About Ringscale AI
-        </motion.p>
-
-        <motion.h1
-          className="mt-6 font-bold text-3xl md:text-4xl text-gray-900"
-          variants={fadeUp}
-          custom={0.1}
-        >
-          We&apos;re building for small business owners
-        </motion.h1>
-
-        <div className="max-w-6xl mx-auto mt-12 md:mt-16">
-          <motion.p
-            className="text-2xl md:text-3xl font-medium text-gray-700 leading-relaxed max-w-5xl mx-auto"
-            variants={fadeUp}
-            custom={0.2}
-          >
-            93% of small business owners struggle to manage their marketing.
-            They are losing customers to bigger brands and chains. Ringscale
-            Media empowers them with the tech advantage they’ve never had, to
-            grow and compete with confidence.
-          </motion.p>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 mt-16">
-            {[
-              {
-                value: "2.3+ Crore",
-                text: "Micro Businesses in India",
-              },
-              {
-                value: "32%+",
-                text: "Contribution to India&apos;s GDP",
-              },
-              {
-                value: "90%+",
-                text: "Never tried Digital Marketing",
-              },
-            ].map((item, index) => (
-              <motion.div
-                key={item.value}
-                className="rounded-3xl border border-black/5 bg-white shadow-sm p-6 group"
-                variants={fadeUp}
-                custom={0.15 * index}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.25 }}
-                whileHover={{ y: -10, scale: 1.02 }}
-                transition={{ duration: 0.35 }}
-              >
-                <h3 className="text-4xl font-bold bg-linear-to-r from-[#5F40EB] to-[#2BC3FF] text-transparent bg-clip-text">
-                  {item.value}
-                </h3>
-                <p
-                  className="text-lg text-gray-700 mt-2"
-                  dangerouslySetInnerHTML={{ __html: item.text }}
-                />
-                <motion.div
-                  className="mt-4 h-1 w-16 bg-linear-to-r from-[#5F40EB] to-[#2BC3FF] rounded-full"
-                  whileHover={{ width: 96 }}
-                  transition={{ duration: 0.3 }}
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </motion.section>
+          <h3 className="text-4xl font-bold bg-linear-to-r from-[#5F40EB] to-[#2BC3FF] text-transparent bg-clip-text">
+            {item.value}
+          </h3>
+          <p
+            className="text-lg text-gray-700 mt-2"
+            dangerouslySetInnerHTML={{ __html: item.text }}
+          />
+          <motion.div
+            className="mt-4 h-1 w-16 bg-linear-to-r from-[#5F40EB] to-[#2BC3FF] rounded-full"
+            whileHover={{ width: 96 }}
+            transition={{ duration: 0.3 }}
+          />
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</motion.section>
 
       <motion.section
         className="max-w-6xl mx-auto px-4 mt-20"
